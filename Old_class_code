@@ -1,0 +1,291 @@
+char val = 101; // HEX/Char/DEC 0x65 / 'e' / 101 . (ASCII table)
+String header = "HTTP/1.1 200 OK\r\nContent-Type: text/html\r\n\r\n";
+String html_1 = R"=====(
+<!DOCTYPE html>
+<html>
+<head>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'/>
+<meta charset='utf-8'>
+<style>
+ body {font-size:140%;}
+ #main {display: table; margin: auto; padding: 0 10px 0 10px; }
+ h2 {text-align:center; }
+ .button { padding:10px 10px 10px 10px; width:100%; background-color: #50FF50; font-size: 120%;}
+ 
+</style>
+</head>
+</html>
+)=====";
+String html_5 = R"=====(
+<!DOCTYPE html>
+<html>
+<head>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'/>
+<meta charset='utf-8'>
+<style>
+ body {font-size:140%;}
+ #main {display: table; margin: auto; padding: 0 10px 0 10px; }
+ h2 {text-align:center; }
+ .button { padding:10px 10px 10px 10px; width:100%; background-color: #50FF50; font-size: 120%;}
+
+</style>
+</head>
+</html>
+)=====";
+String html_6 = R"=====(
+<!DOCTYPE html>
+<html>
+<head>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'/>
+<meta charset='utf-8'>
+<style>
+ body {font-size:140%;}
+ #main {display: table; margin: auto; padding: 0 10px 0 10px; }
+ h2 {text-align:center; }
+ .button { padding:10px 10px 10px 10px; width:100%; background-color: #50FF50; font-size: 120%;}
+
+</style>
+</head>
+</html>
+)=====";
+String html_7 = R"=====(
+<!DOCTYPE html>
+<html>
+<head>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'/>
+<meta charset='utf-8'>
+<style>
+ body {font-size:140%;}
+ #main {display: table; margin: auto; padding: 0 10px 0 10px; }
+ h2 {text-align:center; }
+ .button { padding:10px 10px 10px 10px; width:100%; background-color: #50FF50; font-size: 120%;}
+
+</style>
+</head>
+</html>
+)=====";
+String html_8 = R"=====(
+<!DOCTYPE html>
+<html>
+<head>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'/>
+<meta charset='utf-8'>
+<style>
+ body {font-size:140%;}
+ #main {display: table; margin: auto; padding: 0 10px 0 10px; }
+ h2 {text-align:center; }
+ .button { padding:10px 10px 10px 10px; width:100%; background-color: #50FF50; font-size: 120%;}
+
+</style>
+</head>
+)=====";
+String html_2 = "";
+String html_4 = R"=====(
+ </div>
+</body>
+</html>
+)=====";
+String html_3 = R"=====(
+<!DOCTYPE html>
+<html>
+<head>
+<title>Embedded Course</title>
+</head>
+<body>
+<div id='main'>
+ <h2>Embedded Final Project</h2>
+</body>
+</html>
+)=====";
+String back = R"=====(
+<html>
+<body
+background="http://www.bestfunforall.com/shetter/imgs/Windows%20XP%20Bliss%20HD%20wallpape
+r%20%206.jpg">
+</body>
+</html>
+)=====";
+String html_10 = R"=====(
+<!DOCTYPE html>
+<html>
+<head>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'/>
+<meta charset='utf-8'>
+<style>
+ body {font-size:140%;}
+ #main {display: table; margin: auto; padding: 0 10px 0 10px; }
+ h2 {text-align:center; }
+ .button { padding:10px 10px 10px 10px; width:100%; background-color: #50FF50; font-size: 120%;}
+
+</style>
+</head>
+)=====";
+String html_up = R"=====(
+<!DOCTYPE html>
+<html>
+<head>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'/>
+<meta charset='utf-8'>
+<style>
+ body {font-size:140%;}
+ #main {display: table; margin: auto; padding: 0 10px 0 10px; }
+ h2 {text-align:center; }
+ .button { padding:10px 10px 10px 10px; width:100%; background-color: #50FF50; font-size: 120%;}
+
+</style>
+</head>
+)=====";
+String html_down = R"=====(
+<!DOCTYPE html>
+<html>
+<head>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'/>
+<meta charset='utf-8'>
+<style>
+ body {font-size:140%;}
+ #main {display: table; margin: auto; padding: 0 10px 0 10px; }
+ h2 {text-align:center; }
+ .button { padding:10px 10px 10px 10px; width:100%; background-color: #50FF50; font-size: 120%;}
+
+</style>
+</head>
+)=====";
+String html_home = R"=====(
+<!DOCTYPE html>
+<html>
+<head>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'/>
+<meta charset='utf-8'>
+<style>
+ body {font-size:140%;}
+ #main {display: table; margin: auto; padding: 0 10px 0 10px; }
+ h2 {text-align:center; }
+ .button { padding:10px 10px 10px 10px; width:100%; background-color: #50FF50; font-size: 120%;}
+ 
+</style>
+</head>
+)=====";
+String zero = "Motor at 0%: ";
+String twofive = "Motor at 25%: ";
+String fivezero = "Motor at 50%: ";
+String sevenfive = "Motor at 75%: ";
+String hundred = "Motor at 100%: ";
+String upup = "Adjust Up: ";
+String downdown = "Adjust Down: ";
+#include <ESP8266WiFi.h>
+char ssid[] = "USF"; // your network SSID (name)
+char pass[] = ""; // your network password
+int flag = 0;
+int flag2 = 0;
+WiFiServer server(80); //Port 80 is one of the most commonly used port numbers in the Transmission Control Protocol (TCP) suite. Any Web/HTTP client, such as a Web browser, uses port 80 to send and receive requested Web pages from a HTTP server.
+String request = ""; // http://yourIPadress/request/? this request can be LEDON or LEDOFF
+int LED_Pin; // Builtin nodemcu LED
+void setup()
+{
+
+ Serial.println('0');
+ pinMode(LED_Pin, OUTPUT);
+
+ Serial.begin(9600); // baudrate of PIC and nodemcu should be same
+ Serial.println();
+ Serial.println("Serial started at 9600");
+ Serial.println("Nodemcu");
+ Serial.println();
+ // Connecting to a WiFi network
+ Serial.print(F("Connecting to ")); Serial.println(ssid);
+ WiFi.begin(ssid);
+ Serial.print(WiFi.
+ while (WiFi.status() != WL_CONNECTED)
+ {
+ Serial.print(".");
+ 
+ delay(500);
+ }
+
+
+ Serial.println("");
+ Serial.println(F("[CONNECTED]"));
+ Serial.print("[IP ");
+ Serial.print(WiFi.localIP());
+ Serial.println("]");
+ // start a server
+ server.begin();
+ Serial.println("Server started");
+
+}
+void loop()
+{
+ // Check if a client has connected
+ WiFiClient client = server.available();
+ if (!client) { return; }
+ // Read the first line of the request
+ request = client.readStringUntil('\r');
+
+ if ( request.indexOf("NOPOWER") > 0 ) {
+ digitalWrite(0, HIGH);
+ Serial.println('0');
+
+ }
+
+ else if ( request.indexOf("25POWER") > 0 ) {
+
+ Serial.println('2');
+
+ }
+ else if ( request.indexOf("50POWER") > 0 ) {
+ Serial.println('5');
+
+ }
+ else if ( request.indexOf("75POWER") > 0 ) {
+ Serial.println('7');
+
+ }
+ else if ( request.indexOf("100POWER") > 0 ) {
+ Serial.println('1');
+
+ }
+ else if ( request.indexOf("flag") > 0 ) {
+ flag = 0;
+
+ }
+ 
+
+ html_1 = " <form id='F1' action='NOPOWER'><input class='button' type='submit' value='0%'></form><br>\r\n";
+ html_5 = " <form id='F1' action='25POWER'><input class='button' type='submit' value='25%'></form><br>\r\n";
+ html_6 = " <form id='F1' action='50POWER'><input class='button' type='submit' value='50%'></form><br>\r\n";
+ html_7 = " <form id='F1' action='75POWER'><input class='button' type='submit' value='75%'></form><br>\r\n";
+ html_8 = " <form id='F1' action='100POWER'><input class='button' type='submit' value='100%'></form><br>\r\n";
+ html_10 = " <form id='F1' action='flag'><input class='button' type='submit' value='Go to Adjuster'></form><br>\r\n";
+ html_up = " <form id='F1' action='up'><input class='button' type='submit' value='+'></form><br>\r\n";
+ html_down = " <form id='F1' action='down'><input class='button' type='submit' value='-'></form><br>\r\n";
+ html_home = " <form id='F1' action='flag2'><input class='button' type='submit' value='Go toPresets' ></form><br>\r\n";
+
+ client.flush();
+ client.print( header );
+ client.print( back );
+
+ client.print( html_3 );
+ client.print(zero);
+ client.print( html_1 );
+ client.print(twofive);
+ client.print(html_5);
+ client.print(fivezero);
+ client.print(html_6);
+ client.print(sevenfive);
+ client.print(html_7);
+ client.print(hundred);
+ client.print(html_8);
+ client.print(upup);
+ client.print(html_up);
+ client.print(downdown);
+ client.print(html_down);
+ client.print(html_4);
+ if ( request.indexOf("up") > 0 ) {
+ Serial.println('+');
+ }else if(request.indexOf("down") > 0 ) {
+ Serial.println('-');
+ }
+
+ delay(5);
+ // The client will actually be disconnected when the function returns and 'client' object is detroyed
+}
