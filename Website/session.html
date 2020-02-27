@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>Inner Nourish Counsoling</title>
+<link href="session.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+	<header>
+	
+		<div class="row">
+            <div class="logo">
+            <img src="logo_white.png">
+            </div>
+		<ul class="main-nav">
+			<li><a href="home.html">	HOME </a></li>
+			<li><a href="login.html">	LOG IN </a></li>
+            <li class="active"><a href="login.html">	SESSION </a></li>
+			<li><a href="">	ABOUT </a></li>
+			<li><a href="">	CONTACT </a></li>
+			<li><a href="">	FAQ </a></li>
+	
+            
+        </ul>
+        
+        </div>
+
+        <h1>SESSION ISABEL </h1>
+        
+    
+        
+        
+
+	</header>
+
+
+
+</body>
+    
+<video id="localvid" autoplay></video>
+<video id="remotevid" autoplay></video>
+    
+<video id="sourcevid" autoplay></video>
+<script>
+    var video = document.getElementById('sourcevid');
+    navigator.getUserMedia({audio: true, video: true}, success, error);
+    function success(stream){
+        video.src = window.URL.createObjectURL(stream);
+    }
+</script>
+    
+    
+</html>
