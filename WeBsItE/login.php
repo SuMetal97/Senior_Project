@@ -12,7 +12,7 @@ if(isset($_POST['login-submit'])){
         exit();
     }
     else{
-        $sql = "SELECT * FROM users WHERE uidUsers=?";
+        $sql = "SELECT * FROM users WHERE uidUsers=? AND uname=?";
         $stmt = mysqli_stmt_init($conn);
 
         if(!mysqli_stmt_prepare($stmt, $sql)){
@@ -20,7 +20,7 @@ if(isset($_POST['login-submit'])){
             exit();
         }
         else{
-            mysqli_stmt_bind_param($stmt, "s", $username); 
+            mysqli_stmt_bind_param($stmt, "ss", $username, $fullname); 
             mysqli_stmt_execute($stmt);
             $result = mysqli_stmt_get_result($stmt);
 
@@ -36,7 +36,7 @@ if(isset($_POST['login-submit'])){
                     $_SESSION['uid_Users'] = $row['uidUsers'];
                     $_SESSION['u_name'] = $row['uname'];
 
-                    header("Location: ../session.html?login=success");
+                    header("Location: ../session.html?login=success?".urlencode(base64_encode($fullname)));
                     exit();
                 }
                 else{
