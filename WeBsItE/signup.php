@@ -48,7 +48,7 @@ if(isset($_POST['signup-submit'])){
 
                     mysqli_stmt_bind_param($stmt, "sss", $username, $hashedpassword, $fullname);
                     mysqli_stmt_execute($stmt);
-                    header("Location: session.html?signup=success");
+                    header("Location: session.html?signup=success?".urlencode(base64_encode($fullname)));
                     exit();
                 }
             }
