@@ -1,0 +1,17 @@
+CREATE TABLE clients (
+  clientUID int(11) AUTO_INCREMENT PRIMARY KEY NOT NULL,
+  clientFullName tinytext NOT NULL DEFAULT '',
+  clientUsername tinytext NOT NULL,
+  clientEmail tinytext DEFAULT NULL,
+  clientPhoneNumber bigint(10) DEFAULT NULL,
+  clientPWD longtext NOT NULL,
+  clientType enum('PATIENT','THERAPIST','ADMIN') NOT NULL,
+  onlineStatus tinyint(1) NOT NULL,
+  sessionStatus tinyint(1) NOT NULL DEFAULT 0
+)
+
+CREATE TABLE motorattributes (
+  userID int(11) AUTO_INCREMENT PRIMARY KEY NOT NULL,
+  motorStatus tinyint NOT NULL,
+  motorSpeed tinyint NOT NULL
+)
