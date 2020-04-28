@@ -1,0 +1,10 @@
+C:\Users\Angel Luna\source\repos\Connect Form\Connect Form\bin\Debug\Connect Form.exe.config
+C:\Users\Angel Luna\source\repos\Connect Form\Connect Form\bin\Debug\Connect Form.exe
+C:\Users\Angel Luna\source\repos\Connect Form\Connect Form\bin\Debug\Connect Form.pdb
+C:\Users\Angel Luna\source\repos\Connect Form\Connect Form\obj\Debug\Connect Form.csprojAssemblyReference.cache
+C:\Users\Angel Luna\source\repos\Connect Form\Connect Form\obj\Debug\Connect_Form.Form1.resources
+C:\Users\Angel Luna\source\repos\Connect Form\Connect Form\obj\Debug\Connect_Form.Properties.Resources.resources
+C:\Users\Angel Luna\source\repos\Connect Form\Connect Form\obj\Debug\Connect Form.csproj.GenerateResource.cache
+C:\Users\Angel Luna\source\repos\Connect Form\Connect Form\obj\Debug\Connect Form.csproj.CoreCompileInputs.cache
+C:\Users\Angel Luna\source\repos\Connect Form\Connect Form\obj\Debug\Connect Form.exe
+C:\Users\Angel Luna\source\repos\Connect Form\Connect Form\obj\Debug\Connect Form.pdb

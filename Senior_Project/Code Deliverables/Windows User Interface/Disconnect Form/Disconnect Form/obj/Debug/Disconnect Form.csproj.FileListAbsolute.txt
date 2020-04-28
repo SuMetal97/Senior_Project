@@ -1,0 +1,10 @@
+C:\Users\Angel Luna\source\repos\Disconnect Form\Disconnect Form\bin\Debug\Disconnect Form.exe.config
+C:\Users\Angel Luna\source\repos\Disconnect Form\Disconnect Form\bin\Debug\Disconnect Form.exe
+C:\Users\Angel Luna\source\repos\Disconnect Form\Disconnect Form\bin\Debug\Disconnect Form.pdb
+C:\Users\Angel Luna\source\repos\Disconnect Form\Disconnect Form\obj\Debug\Disconnect_Form.Form1.resources
+C:\Users\Angel Luna\source\repos\Disconnect Form\Disconnect Form\obj\Debug\Disconnect_Form.Properties.Resources.resources
+C:\Users\Angel Luna\source\repos\Disconnect Form\Disconnect Form\obj\Debug\Disconnect Form.csproj.GenerateResource.cache
+C:\Users\Angel Luna\source\repos\Disconnect Form\Disconnect Form\obj\Debug\Disconnect Form.csproj.CoreCompileInputs.cache
+C:\Users\Angel Luna\source\repos\Disconnect Form\Disconnect Form\obj\Debug\Disconnect Form.exe
+C:\Users\Angel Luna\source\repos\Disconnect Form\Disconnect Form\obj\Debug\Disconnect Form.pdb
+C:\Users\Angel Luna\source\repos\Disconnect Form\Disconnect Form\obj\Debug\Disconnect Form.csprojAssemblyReference.cache
